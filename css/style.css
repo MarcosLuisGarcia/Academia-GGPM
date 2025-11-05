@@ -46,6 +46,17 @@
     transform: translateY(-2px);
 }
 
+hr {
+  display: block; /* garante que o box-shadow seja aplicado */
+  border: none;
+  height: 4px;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #999;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
  h4{
     color: #00f0ff;
     background-color: black;
@@ -112,7 +123,7 @@
 }
 
 .img1{
-    background-image: url(../images/banner2.jpg);
+    background-image: url(../images/banner02.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -163,8 +174,8 @@
 }
 
 .redes a img{
-    width: 20%;
-    padding-top: 50px;
+    width: 60%;
+    padding-top: 10px;
 }
 
 
@@ -195,11 +206,11 @@
 
 /*PÁGINA PLANOS */
 .img2{
-    background-image: url(../images/teste1.webp);
+    background-image: url(../images/banner03.webp);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
 .pesquisa{
@@ -258,7 +269,15 @@
     border-radius: 12px;
     padding: 25px 2%;
     margin: 2%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; /* suaviza a transformação */
 }
+
+.box:hover{
+    transform: scale(1.05); /* aumenta 5% */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); /* sombra um pouco mais intensa */
+}
+
 
 .box img{
     width: 100%;
@@ -301,8 +320,8 @@
 
 .banner{
     width: 100%;
-    height: 450px;
-    background-image: url(../images/treinadorbanner.jpg);
+    height: 550px;
+    background-image: url(../images/banner04.jpg);
     background-position: center;
     background-size: cover;
     margin: 45px 0;
@@ -353,9 +372,9 @@
 
 .banner2{
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-image: url(../images/2esteira.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     margin-top: 45px; 
     margin-bottom: -50px;
@@ -364,26 +383,20 @@
 
 .banner3{
     width: 100%;
-    height: 400px;
-    background-image: url(../images/Captura\ de\ tela\ 2025-11-01\ 084412.png);
-    background-position: center;
+    height: 700px;
+    background-image: url(../images/banner05.png);
+    background-position: top;
     background-size: cover;
+    padding-top: 20px;
+    margin-top: 80px;
     margin-bottom: 45px; 
     
-}
-
-
-
-
-.banner3{
-    width: 100%;
-    height: 450px;
-    background-image: url(../images/Captura\ de\ tela\ 2025-11-01\ 084412.png);
-    background-position: center;
-    background-size: cover;
-    margin: 45px 0;
     
 }
+
+
+
+
 
 
 .form {
@@ -497,13 +510,16 @@
 .container4{
     width: 100%;
     height: auto;
+    margin-top: 80px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* opcional, dá um acabamento mais bonito */
    
 }
 
 .container4 .banner4{
     width: 100%;
-    height: 450px;
-    background-image: url(../images/pilatesmarcos.webp);
+    height: 800px;
+    background-image: url(../images/pilates.jfif);
     background-position: center;
     background-size: cover;
     margin-bottom: 45px;
@@ -535,25 +551,29 @@
 
 .container4 .banner5{
     width: 100%;
-    height: 605px;
-    background-image: url(../images/Captura\ de\ tela\ 2025-10-25\ 094846.png);
+    height: 650px;
+    background-image: url(../images/banner06.jpg);
     background-position: center;
     background-size: cover;
+    border-radius: 15px; /* opcional, dá um acabamento mais bonito */
+    
 }
 
 .container4 .banner6{
     width: 100%;
     height: 850px;
-    background-image: url(../images/Captura\ de\ tela\ 2025-10-25\ 095308.png);
+    background-image: url(../images/pilates02.jpg);
     background-position: center;
     background-size: cover;
+    border-radius: 15px; /* opcional, dá um acabamento mais bonito */
+    
     
 }
 
 .box-esq{
     width: 30%;
-    height: 300px;
-    background-image: url(../images/marcospegandonaboladeferro.webp);
+    height: 680px;
+    background-image: url(../images/pilates-exer.jpg);
     background-position: center;
     background-size: cover;
     float: left;
@@ -562,40 +582,45 @@
 
 .box-dir{
     width: 70%;
-    height: 300px;
-    background-image: url(../images/pedro.jpg);
+    height: 680px;
+    background-image: url(../images/pilates-promocao.png);
     background-position: center;
     background-size: cover;
     float: right;
     margin-bottom: 60px;
+    border-radius: 15px; /* opcional, dá um acabamento mais bonito */
+    
 }
 
 .box1{
     width: 33.33%;
     height: 350px;
-    background-image: url(../images/pilates1.webp);
+    background-image: url(../images/pilates04.jfif);
     background-position: center;
     background-size: cover;
     float: left;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .box2{
     width: 33.33%;
     height: 350px;
-    background-image: url(../images/pilates2.jpg);
+    background-image: url(../images/pilates05.png);
     background-position: center;
     background-size: cover;
     float: left;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 
 }
 
 .box3{
     width: 33.33%;
     height: 350px;
-    background-image: url(../images/pilates3.jpg);
+    background-image: url(../images/pilates06.jfif);
     background-position: center;
     background-size: cover;
     float: left;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -603,7 +628,7 @@
 
 /*Pilates*/
 
-.onteiner
+
 
 
 /****/
